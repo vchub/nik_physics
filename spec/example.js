@@ -26,6 +26,7 @@ let round = (x, precision)=> {
 let round2 = (x)=> round(x, 2)
 
 
+// =====================================
 // trigonometric function
 describe('trig function', ()=> {
   it('sin', ()=> {
@@ -47,7 +48,7 @@ let sin = (x)=> Math.sin(toRadian(x))
 let cos = (x)=> Math.cos(toRadian(x))
 let tan = (x)=> Math.tan(toRadian(x))
 
-
+// =====================================
 // vector algebra
 describe('sum and dot product of vectors', ()=> {
   it('sum', ()=> {
@@ -57,3 +58,15 @@ describe('sum and dot product of vectors', ()=> {
 })
 
 let sum = (x, y)=> x.map((num, ind)=> num + y[ind])
+
+
+// =====================================
+// Nikita's test
+describe('try it', ()=> {
+  it('identity', ()=> {
+    expect(identity(1)).toEqual(1)
+    
+  })
+})
+
+let identity = (x)=> x
